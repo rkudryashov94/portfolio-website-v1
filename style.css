@@ -242,23 +242,79 @@ section {
 .btn-color-1,
 .btn-color-2:hover {
 	background: rgb(53, 53, 53);
-    color: white;
+	color: white;
 }
 
 .btn-color-1:hover {
-    background: rgb(0,0,0);
+	background: rgb(0, 0, 0);
 }
 
 .btn-color-2 {
-    background: none;
+	background: none;
 }
 
 .btn-color-2:hover {
-    border: rgb(255, 255,255) 0.1rem solid;
+	border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
-    gap: 1rem;
+	gap: 1rem;
 }
 
+/* About Section */
+#about {
+	position: relative;
+}
 
+.about-containers {
+	gap: 2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.about-details-container {
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+	display: flex;
+}
+
+.about-pic {
+	border-radius: 2rem;
+	height: 430px;
+	width: auto;
+}
+
+.arrow {
+	position: absolute;
+	right: -5rem;
+	bottom: 2.5rem;
+}
+
+.details-container {
+	padding: 1.5rem;
+	flex: 1;
+	background: white;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: rgb(163, 163, 163);
+	text-align: center;
+}
+
+.section-container {
+	gap: 4rem;
+	height: 80%;
+}
+
+.section__pic-container {
+	height: 400px;
+	width: 400px;
+	margin: auto 0;
+}
+
+.text-container p {
+	margin-bottom: 1rem;
+}

@@ -1,106 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Roman Kudryashov's Portfolio</title>
 
-		<!-- SEO Meta Tags -->
-		<meta
-			name="description"
-			content="Welcome to my portfolio! I am an ambitious software engineer, showcasing my projects, skills, 
-            and experiences to land an entry-level software engineer role."
-		/>
-		<meta
-			name="keywords"
-			content="Roman Kudryashov, software engineer, personal portfolio, personal projects, 
-            coding projects, front-end engineer, back-end engineer"
-		/>
-		<meta name="author" content="Roman Kudryashov" />
-		<meta
-			name="google-site-verification"
-			content="6IFdr087Tj-ReSBlc3qYvQzTBVlC7Pnc3_-7Ss-_vTw"
-		/>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman Kudryashov's Portfolio</title>
 
-		<!-- Linking CSS -->
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="mediaqueries.css" />
-	</head>
-	<body>
-		<a href="./my-projects.html">Link to all projects</a>
-		<nav id="desktop-nav">
-			<div class="logo">Roman Kudryashov</div>
-			<div>
-				<ul class="nav-links">
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to my portfolio! I am an ambitious software engineer, showcasing my projects, skills, 
+            and experiences to land an entry-level software engineer role." />
+    <meta name="keywords" content="Roman Kudryashov, software engineer, personal portfolio, personal projects, 
+            coding projects, front-end engineer, back-end engineer" />
+    <meta name="author" content="Roman Kudryashov" />
+    <meta name="google-site-verification" content="6IFdr087Tj-ReSBlc3qYvQzTBVlC7Pnc3_-7Ss-_vTw" />
 
-		<nav id="hamburger-nav">
-			<div class="logo">Roman Kudryashov</div>
-			<div class="hamburger-menu">
-				<div class="hamburger-icon" onclick="toggleMenu()">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<div class="menu-links">
-					<li><a href="#about" onclick="toggleMenu()">About</a></li>
-					<li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-				</div>
-			</div>
-		</nav>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
 
-		<section id="profile">
-			<div class="section__pic-container">
-				<img
-					src="./assets/profile-pic.png"
-					alt="Roman Kudryashov profile picture"
-				/>
-			</div>
+<body>
+    <a href="./my-projects.html">Link to all projects</a>
+    <nav id="desktop-nav">
+        <div class="logo">Roman Kudryashov</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-			<div class="section__text">
-				<p class="section__text__p1">Hello, I'm</p>
-				<h1 class="title">Roman Kudryashov</h1>
-				<p class="section__text__p2">Aspiring Software Engineer</p>
-				<div class="btn-container">
-					<button
-						class="btn btn-color-2"
-						onclick="window.open('./assets/roman-kudryashov-resume-sde.pdf')"
-					>
-						Download CV
-					</button>
+    <nav id="hamburger-nav">
+        <div class="logo">Roman Kudryashov</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
 
-                    <button
-						class="btn btn-color-1"
-						onclick="location.href='./#contact'"
-					>
-						Contact Info
-					</button>
-				</div>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Roman Kudryashov profile picture" />
+        </div>
 
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" 
-                    alt="Roman Kudryashov LinkedIn Profile"
-                    class="icon" 
-                    onclick="location.href='https://www.linkedin.com/in/rkudryashov94/'"
-                    />
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Roman Kudryashov</h1>
+            <p class="section__text__p2">Aspiring Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/roman-kudryashov-resume-sde.pdf')">
+                    Download CV
+                </button>
 
-                    <img src="./assets/github.png" 
-                    alt="Roman Kudryashov Github Profile"
-                    class="icon" 
-                    onclick="location.href='https://github.com/rkudryashov94'"
-                    />
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/rkudryashov94/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Profile of Roman Kudryashov" class="icon" />
+                </a>
+
+                <a href="https://github.com/rkudryashov94" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/github.png" alt="Github Profile of Roman Kudryashov" class="icon" />
+                </a>
+
+            </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">
+            Get To Know More
+        </p>
+
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Roman Kudryashov profile picture" class="about-pic" />
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+
+                        <h3>Experience</h3>
+
+                        <p>2+ years <br /> Software Development</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+
+                        <h3>Education</h3>
+
+                        <p>B.S. Computer Science <br /> A.A. Integrated Studies</p>
+                    </div>
                 </div>
-		</section>
 
-		<!-- Linking JS  -->
-		<script src="script.js"></script>
-	</body>
+                <div class="text-container">
+                    <p>I'm a recent Computer Science graduate from the University of Washington, and I'm actively
+                        seeking a software engineering position. After taking a four-year break from my studies, I found
+                        my motivation through a desire to create a better life for my family, which helped me discover
+                        my passion for technology.</p>
+                    <p>I believe technology has the potential to transform lives, and I'm eager to contribute to that
+                        change. I'm particularly interested in developing tools and services that enhance daily life and
+                        empower diverse communities. My experience includes backend development with Java and Python,
+                        and I'm also excited to explore frontend frameworks like React.js and React Native. I look
+                        forward to building on the skills I acquired at UW and growing my expertise in this dynamic
+                        industry!</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+
+    </section>
+
+    <!-- Linking JS  -->
+    <script src="script.js"></script>
+</body>
+
 </html>
